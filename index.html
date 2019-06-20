@@ -13,9 +13,12 @@
     <title>Steven Balerna Portfolio Page</title>
 </head>
 
-<body>
+<body style="height: 100vh;">
     <div id="topHeader">
-        <div class="card-header text-center"><strong>Steven Balerna Portfolio</strong></div>
+        <div class="card-header">
+            <strong>Steven Balerna Portfolio</strong>
+        </div>
+
     </div>
 
     <div class="accordion" id="accordionExample">
@@ -24,7 +27,7 @@
                 <h2 class="mb-0">
                     <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
                         aria-expanded="true" aria-controls="collapseOne">
-                        About Me
+                        <div id="customCollapseCard1">About Me</div>
                     </button>
                 </h2>
             </div>
@@ -49,14 +52,9 @@
                                         over 20 years ago. I graduated college from UNCC. I am a sports fan of the
                                         Lakers,
                                         Eagles, and Phillies.</p>
-                                    <p>Thank you for visiting my page, here you will find infomation about myself as
+                                    <p>Thank you for taking the time to visit my portfoilio, here you will find infomation about me as
                                         well as
-                                        my portfoilio of projects and a contact page to reach me.Thanks again.</p>
-
-                                    <p> I am excited to be attending school here and I am learning a lot of cool things
-                                        in
-                                        Javascript. I cannot wait to show more of my projects in the coming months. Stay
-                                        tuned.</p>
+                                        my current portfoilio of projects and a few contact pages for you to reach me.  Please feel free to reach out.  I look forward to hearing from you soon!</p>
                                 </div>
                             </div>
                         </section>
@@ -77,13 +75,14 @@
     background-color: #4aaaa5;
     color: #ffffff
 }
+
 </style>
     <div class="card">
         <div class="card-header" id="headingTwo">
             <h2 class="mb-0">
                 <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="false" aria-controls="collapseTwo">
-                    Portfolio
+                    <div id="customCollapseCard2">Portfolio</div>
                 </button>
             </h2>
         </div>
@@ -98,6 +97,7 @@
                                 <div class="card-body">
                                   <blockquote class="blockquote mb-0 text-center">
                                       <h3 class="text-center" id="cityScope"></h3>
+                                      <a href="https://stevenbalerna.github.io/project1/"><img src="assets/images/cityscope.png" class="screenshot" alt="CityScope" /></a>
                                   </blockquote>
                                 </div>
                               </div>
@@ -112,6 +112,7 @@
                                 <div class="card-body">
                                   <blockquote class="blockquote mb-0 text-center">
                                     <h3 class="text-center" id="gifTastic"></h3>
+                                    <a href="https://stevenbalerna.github.io/gifTastic/"><img src="assets/images/giftastic.png" class="screenshot" alt="GifTastic" /></a>
                                   </blockquote>
                                 </div>
                               </div>
@@ -126,6 +127,7 @@
                                 <div class="card-body">
                                   <blockquote class="blockquote mb-0 text-center">
                                    <h3 class="text-center" id="nbaTriviaGame"></h3>
+                                   <a href="https://stevenbalerna.github.io/trivia-game/"><img src="assets/images/nbatrivia.png" class="screenshot" alt="NBA Trivia Game" /></a>
                                   </blockquote>
                                 </div>
                               </div>
@@ -135,11 +137,12 @@
                             <div class="col-lg-3">
                               <div class="card">
                                 <div class="card-header text-center customPortCard">
-                                  <strong>Losses</strong>
+                                  <strong>Infinity Stone Collector Game</strong>
                                 </div>
                                 <div class="card-body">
                                   <blockquote class="blockquote mb-0 text-center">
-                                    <h3 class="text-center" id="losses"></h3>
+                                    <h3 class="text-center" id="iscg"></h3>
+                                    <a href="https://stevenbalerna.github.io/unit-4-game/"><img src="assets/images/infinity.png" class="screenshot" alt="Infinity Stone Collector Game" /></a>
                                   </blockquote>
                                 </div>
                               </div>
@@ -154,52 +157,23 @@
             <h2 class="mb-0">
                 <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree"
                     aria-expanded="false" aria-controls="collapseThree">
-                    Contact Me
+                    <div id="customCollapseCard1">Connect With Me</div>
                 </button>
             </h2>
         </div>
         <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
             <div class="card-body">
-                <div id="main-container" class="container">
-                    <section class="main-section">
-                        <h1>Contact</h1>
-
-                        <form id="contact-form">
-                            <ul>
-                                <li>
-                                    <label for="name">Name</label>
-                                    <input type="text" id="name" name="name" placeholder="John Smith"
-                                        required="required">
-                                </li>
-                                <li>
-                                    <label for="email">Email</label>
-                                    <input type="email" id="email" name="email" placeholder="example@gmail.com"
-                                        required="required">
-                                </li>
-                                <li>
-                                    <label for="message">Message</label>
-                                    <textarea id="message" name="message" required="required"></textarea>
-                                </li>
-                            </ul>
-                            <input type="submit">
-                        </form>
-
-                </div>
-                
-            </div>
-            </section>
-            <section class="sidebar">
-                    <div id="connect">
-                      <h2>Connect with Me</h2>
-              
-                     <a href="https://github.com/stevenbalerna"><img src="assets/images/github-logo.png" class="social" /></a>
-                      <a href="https://www.linkedin.com/in/steve-balerna-0a108b89/"><img src="assets/images/linkedin-logo.png" class="social" alt="LinkedIn" /></a>
-                      <a href="mailto:sbalerna19@gmail.com"><img src="assets/images/gmail-icon.jpg" class="social" /></a>
-                    </div>
-                  </section>
-                </div>
-        </div>
-    </div>
+                    <section class="contact">
+                            <div id="connectwme">
+                              <h2 id="cwm">Connect with Me</h2>
+                              <a href="https://github.com/stevenbalerna"><img src="assets/images/github-logo.png" class="social" alt="GitHub" /></a>
+                              <a href="https://www.linkedin.com/in/steve-balerna-0a108b89/"><img src="assets/images/linkedin-logo.png" class="social" alt="LinkedIn" /></a>
+                              <a href="mailto:sbalerna19@gmail.com"><img src="assets/images/gmail-icon.jpg" class="social" alt="Yahoo" /></a>
+                              <a href="assets/images/steven-balerna-resume.pdf" download>
+                                <img src="assets/images/resume.png" alt="social">
+                              </a>
+                            </div>
+                          </section>  
     </div>
 
     <footer>
